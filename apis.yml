@@ -1,7 +1,25 @@
 aid: payna
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/payna.png
 name: Payna
-description: Payna is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Payna is a compliance operating system for financial licensing that automates
+  applications, renewals, maintenance, and monitoring across all 50 US states and jurisdictions.
+  It tracks state statutes, NMLS procedures, and FinCEN requirements in real time, calculates
+  filing deadlines backward from due dates, scores compliance posture against state examiner
+  playbooks, automates document pre-fill and e-signature, and maintains a timestamped, queryable
+  audit trail for examinations. Payna serves regulated financial sectors including money
+  transmission, lending, mortgage, cryptocurrency/VASP, debt collection, loan origination, and
+  insurance. It is a Y Combinator (W26) company; no public developer API is currently published.
 url: https://raw.githubusercontent.com/api-evangelist/payna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Compliance
+- RegTech
+- Financial Services
+- Licensing
+- Money Transmission
+- Lending
+- Insurance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/payna-domain-security.yml
+- type: Website
+  url: https://payna.com/
+- type: TermsOfService
+  url: https://payna.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://payna.com/privacy-policy
+- type: Support
+  url: mailto:hello@payna.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
