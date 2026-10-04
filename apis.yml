@@ -45,7 +45,7 @@ tags:
 - Company
 - Compliance
 - RegTech
-- Financial-Services
+- Financial Services
 - Licensing
 - Money Transmission
 - Lending
@@ -59,6 +59,7 @@ tags_raw:
 - Money Transmission
 - Lending
 - Insurance
+- Financial-Services
 apis: []
 common:
 - type: DomainSecurity
